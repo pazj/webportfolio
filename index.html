@@ -20,6 +20,11 @@
 
     </head>
     <body>
+        <div class="language-btn" id="buttons">
+            <a href="#eng" data-reload>English</a>
+            <a href="#es" data-reload>Español</a>           
+        </div>
+        
         <header>
             <div class="logo">
                 <!--<img src="img/DevPaz.jpg" alt="">-->
@@ -38,63 +43,119 @@
         </header>
         <!-- Introduction-->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
+            <h1 class="section__title section__title--intro" id="head">
                 Hi World! , I am <strong>Paz Jimenez</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro">Software engineer</p>
+            <p class="section__subtitle section__subtitle--intro" id="profesion">Software Engineer </p>
             <img src="img/DevPaz.jpg" alt="a picture of paz" class="intro__img">
         </section>
 
-    
+        
 
 
         <!-- My Services-->
         <section class="my-services" id="Services">
-            <h2 class="section__title section__title--services">What I do</h2>
+            <h2 class="section__title section__title--services" id="job">What I do</h2>
             <div class="Services">
                 <div class="service">
-                    <h3>Mobile app dev</h3>
-                    <p> Experienced in creating, maintaining and implementing the source code to develop mobile apps and programs that meet the needs and requirements
+                    <h3 id="appdev">Mobile app dev</h3>
+                    <p id="appdesc"> Experienced in creating, maintaining and implementing the source code to develop mobile apps and programs that meet the needs and requirements
                          of the clients using computer programming languages such as Java, python, React Native and Flutter DART.   </p>
                 </div>
                 <div class="service">
-                    <h3>Web development</h3>
-                    <p> I am qualified and have experience in designing, coding and modifying websites, from layout to function and according to a client's specifications. 
+                    <h3 id="webdev">Web development</h3>
+                    <p id="webdesc"> I am qualified and have experience in designing, coding and modifying websites, from layout to function and according to a client's specifications. 
                         I strive to create visually appealing sites that feature user-friendly design and clear navigation. 
                         I have a deep understanding and hands on experience with 
                         Web Applications and programming languages such as HTML, CSS, JavaScript, JQuery and API's. </p>
                 </div>
                 <div class="service">
                     <h3>Machine Learning Dev</h3>
-                    <p> Skilled in the design and development of machine learning and deep learning systems,
-                        have a bast knowledge on different machine learning algorithms. Currently working
-                        in the development of a programm to identify cancer sub-types using CNN and clustering algorithms. </p>
+                    <p id="servdesc"> Skilled in the design and development of machine learning and deep learning systems,
+                        have a bast knowledge on different machine learning algorithms. Worked in the development of a programm 
+                        to identify cancer sub-types using CNN and clustering algorithms. </p>
                 </div>
 
                 <div class="service">
-                    <h3>UI Designer & Dev</h3>
-                    <p> Experienced in the design and coding of user interface for websites and mobile application. 
+                    <h3 id="uititle">UI Designer & Dev</h3>
+                    <p id="uidesc"> Experienced in the design and coding of user interface for websites and mobile application. 
                         Skilled in graphic development, using Adobe Illustrator, Adobe XD and Photoshop.</p>
                 </div>
             </div>
 
-            <a href="#work" class="btn">My Work</a>
+            <a href="#work" class="btn" id="trabajo">My Work</a>
         </section>
 
+        <!--SKILLS-->
+        <section class="my-skills" id="skills">
+            <h2 class="section__title section__title--skills" id="habil">Skills</h2>
+            <div class= "container">
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/javalogo2.png" class="skills-icon">
+                        </div>
+                        <h3>Java</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/pythonlogo1.png" class="skills-icon">
+                        </div>
+                        <h3>Python</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/logoc.png" class="skills-icon">
+                        </div>
+                        <h3>C</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/web3.jpg" class="skills-icon">
+                        </div>
+                        <h3>CSS, HTML, JavaScript</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/fluttericon1.png" class="skills-icon">
+                        </div>
+                        <h3>Flutter</h3>
+                    </div>
+                </div>
+                <div class="skill-box">
+                    <div class="skill-title">
+                        <div class="img">
+                            <img src="img/logos/git1.jfif" class="skills-icon">
+                        </div>
+                        <h3>Git & GitHub</h3>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
         <!--About me-->
         <section class="about-me" id="about">
             
-            <h2 class="section__title section__title--about"> Who I am</h2>
-            <p class="section__subtitle section__subtitle--about">Software engineer base in Paraguay</p>
+            <h2 class="section__title section__title--about" id="me"> Who I am</h2>
+            <p class="section__subtitle section__subtitle--about" id="metitle">Software engineer base in Paraguay</p>
 
             <div class="about-me__body">
-                <p>I am a software engineer graduated from Hanyang University. I specialize in building applications specific to the business
+                <p id="medesc">I am a software engineer graduated from Hanyang University. I specialize in building applications specific to the business
                     needs of the clients. I have done work in software development, mobile app creation,
                     front-end/back-end web, database/server management, and graphic design.
                 </p>
-                <p>My life's passions are to read, travel, exercise and a good wine!</p>
+                <p id="likes">My life's passions are to read, travel, exercise and a good wine!</p>
 
-                <a href="E:\work\pazj_CV.pdf" download="CV">
+                <a href="E:\work\cv_eseng.pdf" download="CV" id="descargar">
                    Download CV
                   </a>
                     
@@ -107,8 +168,8 @@
 
         <!-- My Work -->
         <section class="my-work" id="work">
-            <h2 class="section__title section__title--work">My Work</h2>
-            <p class="section__subtitle section__subtitle--work">A selection of my range of work</p>
+            <h2 class="section__title section__title--work" id="mitrabajo">My Work</h2>
+            <p class="section__subtitle section__subtitle--work" id="trabajotitle">A selection of my range of work</p>
 
             <div class="portfolio">
                 <!--Portfolio item 1-->
@@ -126,20 +187,20 @@
                     <img src="img/img3 3@2x.png" alt="" class="portfolio__img">
                 </a>
 
-                 <!--Portfolio item 4-->
+                 <!--Portfolio item 4
                  <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/img4 3@2x.png" alt="" class="portfolio__img">
-                </a>
+                </a>-->
 
-                 <!--Portfolio item 5-->
+                 <!--Portfolio item 5
                  <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/img5 3@2x.png" alt="" class="portfolio__img">
-                </a>
+                </a>-->
 
-                 <!--Portfolio item 6-->
+                 <!--Portfolio item 6
                  <a href="portfolio-item.html" class="portfolio__item">
                     <img src="img/img6 3@2x.png" alt="" class="portfolio__img">
-                </a>
+                </a>-->
 
                  
             </div>
@@ -156,7 +217,7 @@
                     </a> 
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
+                    <a class="social-list__link" href="https://github.com/pazj">
                         <i class="fa fa-github"></i> 
                     </a>
                 </li>
