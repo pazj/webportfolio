@@ -100,3 +100,37 @@ for(i = 0; i <= dataReload.length - 1; i++){
     }
 
 }
+
+//scroll reveal animation
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+//SCROLL HOME
+sr.reveal( '.section__title--intro', {});
+sr.reveal('.language-btn',{delay: 200});
+sr.reveal('.section__subtitle--intro',{delay: 200});
+sr.reveal('.intro__img', {delay: 400});
+
+//SCROLL SERVICES
+sr.reveal('.section__title--services', {});
+sr.reveal('.service', {delay:400});
+sr.reveal('.btn', {delay:800});
+
+//SCROLL SKILLS
+sr.reveal('.section__title--skills', {});
+sr.reveal('.skill-box', {interval: 200});
+
+//SCROLL ABOUT ME
+sr.reveal('.section__title--about', {});
+sr.reveal('.section__subtitle--about', {delay: 200});
+sr.reveal('.about-me__img',{delay:400});
+sr.reveal('.about-me__body', {delay: 500});
+
+//SCROLL WORK
+sr.reveal('.section__title--work', {});
+sr.reveal('.section__subtitle--work', {delay: 200});
+sr.reveal('.portfolio', {interval: 400});
