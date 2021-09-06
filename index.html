@@ -1,241 +1,317 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>DevPaz Portfolio Website</title>
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DevPaz Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-        <link href="https://fonts.googleapis.com/css?family=Source+code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" 
-        rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-        rel="stylesheet">
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
 
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/scrollreveal.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/scrollreveal.js"></script>
+  </head>
 
-    </head>
-    <body>
-        <div class="language-btn" id="buttons">
-            <a href="#eng" data-reload>English</a>
-            <a href="#es" data-reload>Español</a>           
+  <body>
+    <div class="language-btn" id="buttons">
+      <a href="#eng" data-reload>English</a>
+      <a href="#es" data-reload>Español</a>
+    </div>
+
+    <header>
+      <div class="logo">
+        <!--<img src="img/DevPaz.jpg" alt="">-->
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#Services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Introduction-->
+    <section class="intro" id="home">
+      <h1 class="section__title section__title--intro" id="head">
+        Hi World! , I am <strong>Paz Jimenez</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro" id="profesion">
+        Software Engineer
+      </p>
+      <img src="img/DevPaz.jpg" alt="a picture of paz" class="intro__img" />
+    </section>
+
+    <!-- My Services-->
+    <section class="my-services" id="Services">
+      <h2 class="section__title section__title--services" id="job">
+        What I do
+      </h2>
+      <div class="Services">
+        <div class="service">
+          <h3 id="appdev">Mobile app dev</h3>
+          <p id="appdesc">
+            Experienced in creating, maintaining and implementing the source
+            code to develop mobile apps and programs that meet the needs and
+            requirements of the clients using computer programming languages
+            such as Java, python, React Native and Flutter DART.
+          </p>
         </div>
-        
-        <header>
-            <div class="logo">
-                <!--<img src="img/DevPaz.jpg" alt="">-->
+        <div class="service">
+          <h3 id="webdev">Web development</h3>
+          <p id="webdesc">
+            I am qualified and have experience in designing, coding and
+            modifying websites, from layout to function and according to a
+            client's specifications. I strive to create visually appealing sites
+            that feature user-friendly design and clear navigation. I have a
+            deep understanding and hands on experience with Web Applications and
+            programming languages such as HTML, CSS, JavaScript, React.js,
+            JQuery and API's.
+          </p>
+        </div>
+
+        <div class="service">
+          <h3 id="uititle">UI Designer & Dev</h3>
+          <p id="uidesc">
+            Experienced in the design and coding of user interface for websites
+            and mobile application. Skilled in graphic development, using Adobe
+            Illustrator, Adobe XD and Photoshop.
+          </p>
+        </div>
+      </div>
+
+      <a href="#work" class="btn" id="trabajo">My Work</a>
+    </section>
+
+    <!--SKILLS-->
+    <section class="my-skills" id="skills">
+      <h2 class="section__title section__title--skills" id="habil">Skills</h2>
+      <div class="container">
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/javalogo2.png" class="skills-icon" />
             </div>
-            <button class="nav-toggle" aria-label="toggle navigation">
-                <span class="hamburger"></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#Services" class="nav__link">My Services</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#work" class="nav__link">My work</a></li> 
-                </ul>
-            </nav>
-        </header>
-        <!-- Introduction-->
-        <section class="intro" id="home">
-            <h1 class="section__title section__title--intro" id="head">
-                Hi World! , I am <strong>Paz Jimenez</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro" id="profesion">Software Engineer </p>
-            <img src="img/DevPaz.jpg" alt="a picture of paz" class="intro__img">
-        </section>
-
-        
-
-
-        <!-- My Services-->
-        <section class="my-services" id="Services">
-            <h2 class="section__title section__title--services" id="job">What I do</h2>
-            <div class="Services">
-                <div class="service">
-                    <h3 id="appdev">Mobile app dev</h3>
-                    <p id="appdesc"> Experienced in creating, maintaining and implementing the source code to develop mobile apps and programs that meet the needs and requirements
-                         of the clients using computer programming languages such as Java, python, React Native and Flutter DART.   </p>
-                </div>
-                <div class="service">
-                    <h3 id="webdev">Web development</h3>
-                    <p id="webdesc"> I am qualified and have experience in designing, coding and modifying websites, from layout to function and according to a client's specifications. 
-                        I strive to create visually appealing sites that feature user-friendly design and clear navigation. 
-                        I have a deep understanding and hands on experience with 
-                        Web Applications and programming languages such as HTML, CSS, JavaScript, JQuery and API's. </p>
-                </div>
-                <div class="service">
-                    <h3>Machine Learning Dev</h3>
-                    <p id="servdesc"> Skilled in the design and development of machine learning and deep learning systems,
-                        have a bast knowledge on different machine learning algorithms. Worked in the development of a programm 
-                        to identify cancer sub-types using CNN and clustering algorithms. </p>
-                </div>
-
-                <div class="service">
-                    <h3 id="uititle">UI Designer & Dev</h3>
-                    <p id="uidesc"> Experienced in the design and coding of user interface for websites and mobile application. 
-                        Skilled in graphic development, using Adobe Illustrator, Adobe XD and Photoshop.</p>
-                </div>
+            <h3>Java</h3>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/pythonlogo1.png" class="skills-icon" />
             </div>
-
-            <a href="#work" class="btn" id="trabajo">My Work</a>
-        </section>
-
-        <!--SKILLS-->
-        <section class="my-skills" id="skills">
-            <h2 class="section__title section__title--skills" id="habil">Skills</h2>
-            <div class= "container">
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/javalogo2.png" class="skills-icon">
-                        </div>
-                        <h3>Java</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/pythonlogo1.png" class="skills-icon">
-                        </div>
-                        <h3>Python</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/logoc.png" class="skills-icon">
-                        </div>
-                        <h3>C</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/web3.jpg" class="skills-icon">
-                        </div>
-                        <h3>CSS, HTML, JavaScript</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/fluttericon1.png" class="skills-icon">
-                        </div>
-                        <h3>Flutter</h3>
-                    </div>
-                </div>
-                <div class="skill-box">
-                    <div class="skill-title">
-                        <div class="img">
-                            <img src="img/logos/git1.jfif" class="skills-icon">
-                        </div>
-                        <h3>Git & GitHub</h3>
-                    </div>
-                </div>
-
-
+            <h3>Python</h3>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/react.png" class="skills-icon" />
             </div>
-        </section>
-        <!--About me-->
-        <section class="about-me" id="about">
-            
-            <h2 class="section__title section__title--about" id="me"> Who I am</h2>
-            <p class="section__subtitle section__subtitle--about" id="metitle">Software engineer base in Paraguay</p>
-
-            <div class="about-me__body">
-                <p id="medesc">I am a software engineer graduated from Hanyang University. I specialize in building applications specific to the business
-                    needs of the clients. I have done work in software development, mobile app creation,
-                    front-end/back-end web, database/server management, and graphic design.
-                </p>
-                <p id="likes">My life's passions are to read, travel, exercise and a good wine!</p>
-
-                <a href="pazj.github.io\CV\cv_eseng.pdf" download="CV" id="descargar">
-                   Download CV
-                  </a>
-                    
-
+            <h3>React</h3>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/web3.jpg" class="skills-icon" />
             </div>
-           
-           
-            <img src="img/finalPaz.jpg" alt="paz posing for camera" class="about-me__img">
-        </section>
-
-        <!-- My Work -->
-        <section class="my-work" id="work">
-            <h2 class="section__title section__title--work" id="mitrabajo">My Work</h2>
-            <p class="section__subtitle section__subtitle--work" id="trabajotitle">A selection of my range of work</p>
-
-            <div class="portfolio">
-                <!--Portfolio item 1-->
-                <a href="portfolio-item.html    " class="portfolio__item">
-                    <img src="img/img1 3@2x.png" alt="" class="portfolio__img">
-                </a>
-
-                 <!--Portfolio item 2-->
-                 <a href="portfolio-item1.html" class="portfolio__item">
-                    <img src="img/img2 3@2x.png" alt="" class="portfolio__img">
-                </a>
-
-                 <!--Portfolio item 3-->
-                 <a href="portfolio-item2.html" class="portfolio__item">
-                    <img src="img/img3 3@2x.png" alt="" class="portfolio__img">
-                </a>
-
-                 <!--Portfolio item 4
-                 <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/img4 3@2x.png" alt="" class="portfolio__img">
-                </a>-->
-
-                 <!--Portfolio item 5
-                 <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/img5 3@2x.png" alt="" class="portfolio__img">
-                </a>-->
-
-                 <!--Portfolio item 6
-                 <a href="portfolio-item.html" class="portfolio__item">
-                    <img src="img/img6 3@2x.png" alt="" class="portfolio__img">
-                </a>-->
-
-                 
+            <h3>CSS, HTML, JavaScript</h3>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/fluttericon1.png" class="skills-icon" />
             </div>
-            
-        </section>
+            <h3>Flutter</h3>
+          </div>
+        </div>
+        <div class="skill-box">
+          <div class="skill-title">
+            <div class="img">
+              <img src="img/logos/git1.jfif" class="skills-icon" />
+            </div>
+            <h3>Git & GitHub</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--About me-->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about" id="me">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about" id="metitle">
+        Software engineer base in Paraguay
+      </p>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <a href="mailto:pazjimenez96@gmail.com" class="footer__link">pazjimenez96@gmail.com</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/paztiii/">
-                        <i class="fa fa-instagram"></i>   
-                    </a> 
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/pazj">
-                        <i class="fa fa-github"></i> 
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.facebook.com/paz.jimenez.39">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.youtube.com">
-                        <i class="fa fa-youtube"></i>
-                    </a>
-                </li>
-            </ul>
-        </footer>
+      <div class="about-me__body">
+        <p id="medesc">
+          I am a software engineer graduated from Hanyang University. I
+          specialize in building applications specific to the business needs of
+          the clients. I have done work in software development, mobile app
+          creation, front-end/back-end web, database/server management, and
+          graphic design.
+        </p>
+        <p id="likes">
+          My life's passions are to read, travel, exercise and a good wine!
+        </p>
 
-        <script src="js/index.js"></script>
+        <a
+          href="E:\work\webPortfolio\CV\cv_eseng.pdf"
+          download="CV"
+          id="descargar"
+          target="_blank"
+        >
+          Download CV
+        </a>
+      </div>
 
-    </body>
-</html> 
+      <img
+        src="img/finalPaz.jpg"
+        alt="paz posing for camera"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work" id="mitrabajo">
+        My Work
+      </h2>
+      <p class="section__subtitle section__subtitle--work" id="trabajotitle">
+        A selection of my range of work
+      </p>
+
+      <div class="portfolio">
+        <!--Portfolio item 1-->
+        <div class="img__container">
+          <a href="portfolio-item.html " class="portfolio__item">
+            <img src="img/img1 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">PassBy</div>
+              <p class="img__description">Mobile UI Designer & dev</p>
+            </div>
+          </a>
+        </div>
+
+        <!--Portfolio item 2-->
+        <div class="img__container">
+          <a href="portfolio-item1.html" class="portfolio__item">
+            <img src="img/img2 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">My Portfolio</div>
+              <p class="img__description">Web Dev</p>
+            </div>
+          </a>
+        </div>
+
+        <!--Portfolio item 3-->
+        <div class="img__container">
+          <a href="portfolio-item2.html" class="portfolio__item">
+            <img src="img/img3 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">Sunnyside</div>
+              <p class="img__description">Landing Page Dev</p>
+            </div>
+          </a>
+        </div>
+
+        <!--Portfolio item 4 -->
+        <div class="img__container">
+          <a href="portfolio-item3.html" class="portfolio__item">
+            <img src="img/img4 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">Photography <br />Portfolio</div>
+              <p class="img__description">Web Dev</p>
+            </div>
+          </a>
+        </div>
+
+        <!--Portfolio item 5 -->
+        <div class="img__container">
+          <a href="portfolio-item4.html" class="portfolio__item">
+            <img src="img/img5 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">Amazon Clone <br />Project</div>
+              <p class="img__description">Front-end & Back-end dev</p>
+            </div>
+          </a>
+        </div>
+
+        <!--Portfolio item 6 -->
+        <div class="img__container">
+          <a href="portfolio-item5.html" class="portfolio__item">
+            <img src="img/img6 3@2x.png" alt="" class="portfolio__img" />
+            <div class="img__overlay img__overlay--blur">
+              <div class="img__title">Whatsapp 2.0 clone</div>
+              <p class="img__description">with Next.js</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <a href="mailto:pazjimenez96@gmail.com" class="footer__link"
+        >pazjimenez96@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.instagram.com/paztiii/"
+          >
+            <i class="fa fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/pazj">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a
+            class="social-list__link"
+            href="https://www.facebook.com/paz.jimenez.39"
+          >
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://www.youtube.com">
+            <i class="fa fa-youtube"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
